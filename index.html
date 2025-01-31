@@ -9,32 +9,42 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/Leaf.png" type="image/x-icon">
-   <!-- tailwind CSS CDN  -->
-   <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- tailwind CSS CDN  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- font Add sora+popins -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
-    .sora   {  font-family: "Sora", serif;}
-    .poppins{ font-family: "Poppins", serif;}    
-         :root {
-            --primary:white;
+
+        .sora {
+            font-family: "Sora", serif;
+        }
+
+        .poppins {
+            font-family: "Poppins", serif;
+        }
+
+        :root {
+            --primary: white;
             --accent: #179800;
             --secoundry: #EFEBE3;
-            --text : #111;
-         }
-         .wrapper{
+            --text: #111;
+        }
+
+        .wrapper {
             max-width: 1320px;
             margin-left: auto;
             margin-right: auto;
-         }
-   </style>
+        }
+    </style>
     <title>Nature's Platter</title>
 </head>
+
 <body class="bg-[var(--primary)] sora text-[#111]">
     <!-- 
     Main Tesk
@@ -55,9 +65,10 @@
     <!-- Header section  -->
     <header class="bg-gradient-to-b from-white to-[var(--secoundry)] max-h-dvh overflow-hidden">
         <!-- nav  -->
-        <nav class="wrapper flex justify-between px-4 md:mx-0 py-4 items-center border border-[var(--accent)] md:border-none">
+        <nav
+            class="wrapper flex justify-between px-4 md:mx-0 py-4 items-center border border-[var(--accent)] md:border-none">
             <div class="logo w-28 md:w-32 lg:w-36"><img src="img/logo-header.png" alt=""></div>
-            <ol class="hidden md:flex gap-x-5">  
+            <ol class="hidden md:flex gap-x-5">
                 <li>Product</li>
                 <li>Services</li>
                 <li>Contact us</li>
@@ -66,92 +77,111 @@
             <!-- Hidden Mobile  -->
             <div class="menu-btn hidden md:flex gap-x-5 justify-between items-center">
                 <div class="search">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                      </svg>                           
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
                 </div>
                 <div class="shopping">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                      </svg>                      
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
                 </div>
                 <div>
-                    <a class="text-xl border border-[var(--accent)] text-[var(--accent)] px-5 py-1 rounded-md" class="" href="#0">Login</a>
-                    <a class="ml-2 text-xl border border-[var(--accent)] bg-[var(--accent)] text-[var(--primary)] px-5 py-1 rounded-md" href="#0">Register </a>    
+                    <a class="text-xl border border-[var(--accent)] text-[var(--accent)] px-5 py-1 rounded-md" class=""
+                        href="#0">Login</a>
+                    <a class="ml-2 text-xl border border-[var(--accent)] bg-[var(--accent)] text-[var(--primary)] px-5 py-1 rounded-md"
+                        href="#0">Register </a>
                 </div>
             </div>
 
             <!-- visible Mobile  -->
-             <div class="text-[var(--accent)] cursor-pointer block md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
-                  
-             </div>
+            <div class="text-[var(--accent)] cursor-pointer block md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-8">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+
+            </div>
 
         </nav>
 
         <!-- Banner hero image  -->
-         <section>
+        <section>
             <div class="text-center">
-                <h1 class="mt-10 md:mt-16 mb-6 font-semibold text-4xl md:text-[3.5rem]">Freshness <span class="text-[var(--accent)]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
-                <p class="w-5/6 max-w-[785px] m-auto text-base md:text-xl opacity-80">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                <h1 class="mt-10 md:mt-16 mb-6 font-semibold text-4xl md:text-[3.5rem]">Freshness <span
+                        class="text-[var(--accent)]">You Can <br> Count</span> On, Prices You’ll Love!</h1>
+                <p class="w-5/6 max-w-[785px] m-auto text-base md:text-xl opacity-80">Shop your daily essentials at
+                    unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
                 <div class="max-w-3xl m-auto">
                     <img class="" src="img/hero-vegetables.png" alt="">
                 </div>
             </div>
-         </section>
+        </section>
     </header>
 
     <!-- Services Section  -->
-    <section class="px-4 mt-10 md:mt-28">
+    <section class="px-4 mt-16 md:mt-28">
         <div class="wrapper">
             <h1 class="text-[var(--accent)] font-bold text-2xl md:text-4xl mb-6 md:mb-10">Services</h1>
             <!-- services card  -->
-             <div class="grid grid-cols-1 md:grid-cols-3  gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-3  gap-5">
                 <!-- single -->
                 <div class="text-center bg-[var(--secoundry)]  rounded-lg p-7 md:p-10">
-                    <div class="bg-[var(--primary)]  w-36 h-36 m-auto flex justify-center items-center rounded-full"><img src="img/delivery.png" alt=""></div>
+                    <div class="bg-[var(--primary)]  w-36 h-36 m-auto flex justify-center items-center rounded-full">
+                        <img src="img/delivery.png" alt=""></div>
                     <h1 class="mt-6 text-xl md:text-2xl mb-3 font-semibold">Fast delivery</h1>
-                    <p class="opacity-80 text-base md:text-lg">Lightning-fast delivery, getting your orders to you quickly and efficiently, every time.</p>
+                    <p class="opacity-80 text-base md:text-lg">Lightning-fast delivery, getting your orders to you
+                        quickly and efficiently, every time.</p>
                 </div>
                 <!-- single -->
                 <div class="text-center bg-[var(--secoundry)]  rounded-lg p-7 md:p-10">
-                    <div class="bg-[var(--primary)]  w-36 h-36 m-auto flex justify-center items-center rounded-full"><img src="img/service.png" alt=""></div>
+                    <div class="bg-[var(--primary)]  w-36 h-36 m-auto flex justify-center items-center rounded-full">
+                        <img src="img/service.png" alt=""></div>
                     <h1 class="mt-6 text-xl md:text-2xl mb-3 font-semibold">24/7 Services</h1>
-                    <p class="opacity-80 text-base md:text-lg">Always available, round-the-clock service, ensuring convenience and support whenever you need it.</p>
+                    <p class="opacity-80 text-base md:text-lg">Always available, round-the-clock service, ensuring
+                        convenience and support whenever you need it.</p>
                 </div>
                 <!-- single -->
                 <div class="text-center bg-[var(--secoundry)]  rounded-lg p-7 md:p-10">
-                    <div class="bg-[var(--primary)]  w-36 h-36 m-auto flex justify-center items-center rounded-full"><img src="img/delivery.png" alt=""></div>
+                    <div class="bg-[var(--primary)]  w-36 h-36 m-auto flex justify-center items-center rounded-full">
+                        <img src="img/delivery.png" alt=""></div>
                     <h1 class="mt-6 text-xl md:text-2xl mb-3 font-semibold">Healthy Products</h1>
-                    <p class="opacity-80 text-base md:text-lg">Fresh, nutritious products designed for your health and wellness, quality you can trust.</p>
+                    <p class="opacity-80 text-base md:text-lg">Fresh, nutritious products designed for your health and
+                        wellness, quality you can trust.</p>
                 </div>
 
-             </div>
+            </div>
         </div>
     </section>
 
 
-    <!-- Section Products  -->
-    <section class="px-4 mt-10 md:mt-28 bg-[var(--secoundry)] py-10 md:py-32 ">
+    <!--  SEction Popular Products Products  -->
+    <section class="px-4 mt-10 md:mt-28 bg-[var(--secoundry)] py-14 md:py-32 ">
         <div class="wrapper">
-            <h1 class="text-[var(--accent)] font-bold text-2xl md:text-4xl mb-6 md:mb-10">Services</h1>
+            <h1 class="text-[var(--accent)] font-bold text-2xl md:text-4xl mb-6 md:mb-10">Popular Products</h1>
             <!-- Parent Wrapper 2 Coloumn-->
             <div class="flex flex-col md:flex-row gap-3 relative">
                 <!-- First Child ~ green cta  -->
                 <div class="bg-gradient-to-br from-[#53db3a] to-green-100 grow-1  rounded-lg relative min-h-80">
                     <div class="pt-5 pl-5">
                         <h1 class="pb-5 text-2xl md:text-4xl text-[var(--primary)] font-bold">30% off</h1>
-                        <p class="pb-5 opacity-80">Discover a world of treats, toys and <br> essentials handpicked for</p>
-                        <a class="text-xl border border-[var(--primary)] bg-[var(--primary)] text-[var(--text)] px-5 py-1 rounded-md " href="#0">Buy Now</a>    
+                        <p class="pb-5 opacity-80">Discover a world of treats, toys and <br> essentials handpicked for
+                        </p>
+                        <a class="text-xl border border-[var(--primary)] bg-[var(--primary)] text-[var(--text)] px-5 py-1 rounded-md "
+                            href="#0">Buy Now</a>
                     </div>
                     <div class="absolute bottom-0 right-0"><img src="img/vegetable-offer.png" alt=""></div>
                 </div>
                 <!-- Second Child ~ 3 layer of Tometo grid  -->
-                 <div class="grow-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6 md:mt-0">
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                <div class="grow-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6 md:mt-0">
+
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
                         <div class="bg-[var(--secoundry)] rounded-lg">
                             <img src="img/tomato.png" alt="">
                         </div>
@@ -159,227 +189,280 @@
                         <div class="ml-2">
                             <div class="flex gap-2">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
                                 </span>
-                                <h2>4.7</h2>
+                                <h2>5.0</h2>
                             </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
-                        </div>
-                    </div>
-                     <!-- single Tomato Card  -->
-                     <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
-                        <div class="bg-[var(--secoundry)] rounded-lg">
-                            <img src="img/tomato.png" alt="">
-                        </div>
-                        <!-- single Content  -->
-                        <div class="ml-2">
-                            <div class="flex gap-2">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6 text-amber-400">
-                                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
-                                      </svg>                                      
-                                </span>
-                                <h2>4.7</h2>
-                            </div>
-                            <h1 class="font-medium ">Tomato 500g</h1>
-                            <small>$39.99</small>
+                            <h1 class="font-medium ">Poato 900g</h1>
+                            <small>$28.99</small>
                         </div>
                     </div>
 
-                 </div>
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/potato.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Onion 300g</h1>
+                            <small>$99.99</small>
+                        </div>
+                    </div>
+
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/onion.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Tomato 500g</h1>
+                            <small>$39.99</small>
+                        </div>
+                    </div>
+                 
+          
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/potato.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Onion 300g</h1>
+                            <small>$99.99</small>
+                        </div>
+                    </div>
+
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/onion.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Tomato 500g</h1>
+                            <small>$39.99</small>
+                        </div>
+                    </div>
+                 
+          
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/potato.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Onion 300g</h1>
+                            <small>$99.99</small>
+                        </div>
+                    </div>
+
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/onion.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Tomato 500g</h1>
+                            <small>$39.99</small>
+                        </div>
+                    </div>
+             
+                    
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/tomato.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>5.0</h2>
+                            </div>
+                            <h1 class="font-medium ">Poato 900g</h1>
+                            <small>$28.99</small>
+                        </div>
+                    </div>
+
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/potato.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Onion 300g</h1>
+                            <small>$99.99</small>
+                        </div>
+                    </div>
+
+                    
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/potato.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Onion 300g</h1>
+                            <small>$99.99</small>
+                        </div>
+                    </div>
+                          
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/onion.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>4.7</h2>
+                            </div>
+                            <h1 class="font-medium ">Tomato 500g</h1>
+                            <small>$39.99</small>
+                        </div>
+                    </div>
+                 
+                             
+                    <!-- single Tomato Card  -->
+                    <div class="flex gap-3 p-3 rounded-lg bg-[var(--primary)] items-center">
+                        <div class="bg-[var(--secoundry)] rounded-lg">
+                            <img src="img/tomato.png" alt="">
+                        </div>
+                        <!-- single Content  -->
+                        <div class="ml-2">
+                            <div class="flex gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="size-6 text-amber-400">
+                                        <path fill-rule="evenodd"
+                                            d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <h2>5.0</h2>
+                            </div>
+                            <h1 class="font-medium ">Poato 900g</h1>
+                            <small>$28.99</small>
+                        </div>
+                    </div>
+   
+                    
+              </div>   <!-- end tomato Grid  -->
             </div>
         </div>
     </section>
@@ -395,4 +478,5 @@
 
     <div class="h-100 py-80 mt-96 bg-green-100"></div>
 </body>
+
 </html>
