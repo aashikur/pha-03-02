@@ -48,7 +48,7 @@
         @media (max-width: 768px) { 
             .wrapper {
             padding-left: 10px;
-            padding-right: 1px;
+            padding-right: 10px;
             /* background-color: aqua; */
         }
         }
@@ -76,9 +76,12 @@
     <!-- Header section  -->
     <header class="bg-gradient-to-b from-white to-[var(--secoundry)]">
         <!-- nav  -->
-        <nav
-            class="wrapper flex justify-between px-4 md:mx-0 py-4 items-center border border-[var(--accent)] md:border-none">
-            <div class="logo w-28 md:w-32 lg:w-36"><img src="img/logo-header.png" alt=""></div>
+        <nav style="padding-left: 25px; padding-right: 25px;"
+            class="wrapper flex justify-between md:mx-0 py-4 items-center border border-[var(--accent)] md:border-none">
+            <div class="logo w-28 md:w-32 lg:w-36">
+                <img class="hidden md:block" src="img/logo-header.png" alt="">
+                <img class="block md:hidden" src="img/leaf.png" alt="">
+            </div>
             <ol class="hidden md:flex gap-x-5">
                 <li>Product</li>
                 <li>Services</li>
@@ -87,14 +90,14 @@
 
             <!-- Hidden Mobile  -->
             <div class="menu-btn hidden md:flex gap-x-5 justify-between items-center">
-                <div class="search">
+                <div class="search hidden lg:block">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
                     </svg>
                 </div>
-                <div class="shopping">
+                <div class="shopping hidden lg:block">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round"
