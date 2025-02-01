@@ -51,9 +51,32 @@
             padding-right: 10px;
             /* background-color: aqua; */
         }
+        .animate-car {
+            animation: move-car 4s linear infinite;
+        }
         }
     </style>
-    <title>Nature's Platter</title>
+    <!-- animation  -->
+     <style>
+        @keyframes move-car {
+            0% {
+                transform: translateX(0%) scaleX(1);
+            }
+            50% {
+                transform: translateX(100vw) scaleX(1);
+            }
+            51% {
+                transform: translateX(100vw) scaleX(-1);
+            }
+            100% {
+                transform: translateX(0%) scaleX(-1);
+            }
+        }
+        .animate-car {
+            animation: move-car 7s linear infinite;
+        }
+    </style>
+ <title>Nature's Platter</title>
 </head>
 
 <body class="bg-[var(--primary)] sora text-[#111]">
@@ -74,18 +97,18 @@
     <!-- ================================================ -->
 
     <!-- Header section  -->
-    <header class="bg-gradient-to-b from-white to-[var(--secoundry)]">
+    <header class="bg-gradient-to-b from-white to-[var(--secoundry)] relative overflow-hidden">
         <!-- nav  -->
         <nav style="padding-left: 25px; padding-right: 25px;"
             class="wrapper flex justify-between md:mx-0 py-4 items-center border border-[var(--accent)] md:border-none">
-            <div class="logo w-28 md:w-32 lg:w-36">
+            <div class="logo w-28 md:w-32 lg:w-36 cursor-pointer">
                 <img class="hidden md:block" src="img/logo-header.png" alt="logo">
                 <img class="block md:hidden" src="img/logo.png" alt="logo">
             </div>
             <ol class="hidden md:flex gap-x-5">
-                <li>Product</li>
-                <li>Services</li>
-                <li>Contact us</li>
+                <li class="cursor-pointer hover:text-green-500">Product</li>
+                <li class="cursor-pointer hover:text-green-500">Services</li>
+                <li class="cursor-pointer hover:text-green-500">Contact us</li>
             </ol>
 
             <!-- Hidden Mobile  -->
@@ -105,9 +128,9 @@
                     </svg>
                 </div>
                 <div>
-                    <a class="animate-bounce text-xl border border-[var(--accent)] text-[var(--accent)] px-5 py-1 rounded-md" class=""
+                    <a class="text-xl border border-[var(--accent)] text-[var(--accent)] hover:text-[var(--primary)] hover:bg-[var(--accent)] px-5 py-1 rounded-md" class=""
                         href="#0">Login</a>
-                    <a class="ml-2 text-xl border border-[var(--accent)] bg-[var(--accent)] text-[var(--primary)] px-5 py-1 rounded-md"
+                    <a class="ml-2 text-xl border border-[var(--accent)] bg-[var(--accent)] hover:opacity-60 text-[var(--primary)] px-5 py-1 rounded-md"
                         href="#0">Register </a>
                 </div>
             </div>
@@ -137,7 +160,14 @@
                 </div>
             </div>
         </section>
-    </header>
+
+        <!-- Animation Car  -->
+        <div class="absolute animate-car left-0 bottom-5 w-20 h-16 ">
+            <img src="img/delivery.png" alt="">
+        </div>
+
+        </header>
+
 
     <!-- self Section -->
     <section class="pt-24">
